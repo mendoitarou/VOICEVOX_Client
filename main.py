@@ -146,6 +146,12 @@ def log_show():
     log_list.grid(row=1, column=0)
     log_title.grid(row=0, column=0)
 
+def window_top_show():
+    if(root.attributes('-topmost')):
+        root.attributes('-topmost', False)
+    else:
+        root.attributes('-topmost', True)
+
 # メインウィンドウ
 # ウィンドウ生成
 root = Tk()
@@ -169,6 +175,9 @@ setting_button = ttk.Button(root, text = '設定', command=lambda:setting_show()
 log_button = ttk.Button(root, text = 'ログ', command=lambda:log_show())
 exit_button = ttk.Button(root,text = '終了', command=lambda:quit())
 
+
+window_top_button = ttk.Button(root, text = '常に最前面に表示/非表示', command=lambda:window_top_show())
+
 # レンダリング
 Input_Text_Label.grid(row=1,column=0)
 Input_Text_Entry.grid(row=1,column=1)
@@ -181,6 +190,8 @@ clear_button.grid(row=3, column=1)
 setting_button.grid(row=4, column=0)
 log_button.grid(row=4, column=1)
 exit_button.grid(row=4, column=2)
+
+window_top_button.grid(row=5, column=1)
 
 # 初期設定を適応
 Speaker_ID.set(2)
