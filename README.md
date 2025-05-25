@@ -22,6 +22,8 @@ VOICEVOXを必要最小限で扱うためのクライアントです。
 なんの差なんだ？
 
 ## 初期セットアップ
+[VOICEVOX](https://voicevox.hiroshiba.jp/)をインストールし、初期セットアップを行っておいてください。
+
 Windowsのコマンドプロンプトを想定しています。
 
 (Linuxなどは適宜コマンドを置き換えてください。)
@@ -41,6 +43,8 @@ pip install requests pyaudio
 これでOKです。
 
 ## 使い方
+最初に[VOICEVOX](https://voicevox.hiroshiba.jp/)を起動します。
+
 シンプルなので起動すればいけると思います。
 
 仮想環境に入っている状態で以下のコマンドで実行できます。
@@ -48,3 +52,8 @@ pip install requests pyaudio
 ```
 python main.py
 ```
+
+## 表示
+[VOICEVOX](https://voicevox.hiroshiba.jp/)を使用しています。
+
+公式の利用規約に基づいて利用してください。
